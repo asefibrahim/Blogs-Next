@@ -1,3 +1,4 @@
+import Footer from "./ReuseableComponents/Footer";
 import Header from "./ReuseableComponents/Header";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -13,7 +14,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {children}
+        <div className="w-11/12 mx-auto my-5 min-h-[calc(100vh-200px)]">{children}</div>
+        <Footer />
       </body>
     </html>
   );
