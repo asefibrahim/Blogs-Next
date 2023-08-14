@@ -1,7 +1,8 @@
 import React from "react";
 import Swal from "sweetalert2";
+import StoreComment from "../customHook/StoreComment";
 
-const CommetSection = () => {
+const CommetSection = ({id}) => {
     const submitcomment = (event)=>{
         event.preventDefault();
         const form = event.target;
@@ -16,7 +17,7 @@ const CommetSection = () => {
             return;
         }
         const commentdata = {comment,user};
-        console.log(commentdata);
+        StoreComment(id,commentdata);
         form.reset();
     }
   return (

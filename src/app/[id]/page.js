@@ -18,10 +18,10 @@ const BlogDetails = ({params}) => {
                 <h1 className="text-sm font-bold text-gray-500">{blogs?.author}</h1>
                 <h1><span className="font-bold text-yellow-500">Publish Date: </span>{blogs?.publishedAt}</h1>
                 <h1 className="text-2xl font-bold font-serif">{blogs?.title}</h1>
-                <h1>{blogs?.description}</h1>
-                <p>{blogs?.content}</p>
+                <p className="text-sm text-gray-500 mb-1 mt-2">{blogs?.description}</p>
+                <p className="text-sm text-gray-500 mb-1">{blogs?.content}</p>
             </div>
-            <CommetSection/>
+            <CommetSection id={blogs?.source.id}/>
         </div>
     );
 };
