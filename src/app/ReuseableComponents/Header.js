@@ -6,7 +6,7 @@ const Header = () => {
     <li><Link href="/">Home</Link></li>
     <li><Link href="/blog">Blog</Link></li>
     <li><Link href="/about">About us</Link></li>
-    <li><Link href="/">Contact us</Link></li>
+    <li><Link href="/contact">Contact us</Link></li>
     </>
   return (
     <div className="border-b">
