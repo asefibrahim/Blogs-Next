@@ -11,7 +11,7 @@ const HomeSingleBlog = (Blog) => {
                 <h1 className='text-lg'>{title}</h1>
                 <p className='text-sm text-gray-500'>{publishedAt}</p>
                 <p className='my-3 text-sm text-gray-500'>{description}</p>
-                <Link className='mt-auto px-5 py-2 bg-slate-600 text-center text-white rounded-md shadow-md hover:bg-slate-700' href={"/"}>Click here for Details</Link>
+                <Link className='mt-auto px-5 py-2 bg-slate-600 text-center text-white rounded-md shadow-md hover:bg-slate-700' href={`/${source.id}`}>Click here for Details</Link>
             </div>
         </div>
     );

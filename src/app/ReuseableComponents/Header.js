@@ -4,7 +4,7 @@ import React from "react";
 const Header = () => {
     const Menubar = <>
     <li><Link href="/">Home</Link></li>
-    <li><Link href="/">Blog</Link></li>
+    <li><Link href="/BlogDetails">Blog</Link></li>
     <li><Link href="/">About us</Link></li>
     <li><Link href="/">Contact us</Link></li>
     </>
