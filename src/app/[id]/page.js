@@ -13,7 +13,7 @@ const BlogDetails = ({params}) => {
     
     return (
         <div>
-            <img className="rounded-md shadow-sm w-2/5 h-72" src={blogs?.urlToImage} alt="" />
+            <img className="rounded-md shadow-sm md:w-2/5 h-72" src={blogs?.urlToImage} alt="" />
             <div className="p-5">
                 <h1 className="text-sm font-bold text-gray-500">{blogs?.author}</h1>
                 <h1><span className="font-bold text-yellow-500">Publish Date: </span>{blogs?.publishedAt}</h1>

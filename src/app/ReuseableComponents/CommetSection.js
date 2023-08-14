@@ -28,7 +28,7 @@ const CommetSection = ({ id }) => {
     <div className="py-10 mt-5 border-t">
       <form onSubmit={submitcomment}>
         <textarea
-          className="border w-3/5 outline-none rounded-md min-h-16 max-h-72 p-3 text-sm"
+          className="border md:w-3/5 outline-none rounded-md min-h-16 max-h-72 p-3 text-sm"
           name="comment"
           id="comment"
           cols="30"
